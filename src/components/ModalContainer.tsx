@@ -24,6 +24,7 @@ const ModalContainer: React.FC<ModalProps> = props => (
     size="small"
     onClose={() => props.onModalClose()}
     className="imageModal"
+    closeIcon={true}
   >
     <Modal.Content>
       {/* modal loader */}
@@ -44,9 +45,7 @@ const ModalContainer: React.FC<ModalProps> = props => (
         />
       )}
       <Image src={props.imageData.url} className="mainImage" />
-      <Header size="large" className="modalTitle">
-        {props.imageData.title}
-      </Header>
+      <h2 className="modalTitle">{props.imageData.title}</h2>
       {/* for next image */}
       {props.imageData.id !== props.dataLength && (
         <Image

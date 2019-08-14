@@ -131,6 +131,7 @@ class ImageGrid extends React.Component<{}, State> {
           >
             {imageData.map((data, index) => (
               <div
+                key={index}
                 className="App__imageWrapper"
                 onClick={() => this.handleClick(data, '')}
               >

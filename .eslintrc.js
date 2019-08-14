@@ -22,7 +22,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': [0],
     '@typescript-eslint/no-unused-vars': [0],
     '@typescript-eslint/camelcase': [1],
-    // '@typescript-eslint/no-explicit-any': [2],
+    '@typescript-eslint/no-explicit-any': [2],
     '@typescript-eslint/no-inferrable-types': [0],
     '@typescript-eslint/no-empty-interface': [0],
     '@typescript-eslint/explicit-member-accessibility':[0],

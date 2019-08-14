@@ -7,12 +7,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  .mainLoader{
+  .mainLoader {
     position: absolute;
     top: 50%;
     left: 50%;
   }
-  .title{
+  .title {
     background-color: brown;
     display: inline-block;
     padding: 15px;
@@ -51,13 +51,13 @@
       width: 100%;
       z-index: 3;
     }
-    &:hover:before{
+    &:hover:before {
       opacity: 0.3;
     }
     &:hover {
       transition: all 1s;
       span {
-        z-index: 999;
+        z-index: 111;
         display: block;
       }
     }
@@ -73,9 +73,13 @@
     }
   }
 }
-.imageModal{
-  .content{
-    .modalTitle{
+.imageModal {
+  .close.icon {
+    top: -10px !important;
+    left: 83% !important;
+  }
+  .content {
+    .modalTitle {
       text-transform: capitalize;
       color: white;
       width: 85%;
@@ -84,17 +88,18 @@
       text-align: center;
     }
     position: relative;
-    .prevArrow{
+    .prevArrow {
       width: 30px;
       top: 43%;
       left: -5%;
     }
-    .nextArrow{
+    .nextArrow {
       width: 30px;
       top: 43%;
       right: 6%;
     }
-    .prevArrow, .nextArrow{
+    .prevArrow,
+    .nextArrow {
       position: absolute;
       cursor: pointer;
     }
@@ -104,64 +109,111 @@
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 @media (max-width: 1199px) {
-  .imageModal{
-    .content{
-      .nextArrow{
+  .imageModal {
+    .close.icon {
+      left: 88% !important;
+    }
+    .content {
+      .nextArrow {
         right: 1%;
       }
     }
   }
 }
 @media (max-width: 991px) {
-  .imageModal{
-    .content{
-      .nextArrow{
+  .imageModal {
+    .close.icon {
+      left: 86% !important;
+    }
+    .content {
+      .nextArrow {
         right: 3%;
       }
     }
   }
 }
 @media (max-width: 769px) {
-  .imageModal{
-    .content{
-      .prevArrow{
+  .imageModal {
+    .close.icon {
+      left: 92% !important;
+    }
+    .content {
+      .prevArrow {
         left: -3%;
       }
-      .nextArrow{
+      .nextArrow {
         right: -3%;
       }
     }
   }
 }
 @media (max-width: 640px) {
-  .imageModal{
-    .content{
-      .prevArrow{
-        top: -7%;
-        left: 1%;
+  .imageModal {
+    .close.icon {
+      top: 1% !important;
+      left: 93% !important;
+    }
+    .content {
+      .modalTitle {
+        font-size: 14px;
+        margin-top: 0px;
       }
-      .nextArrow{
-        top: -7%;
-        right: 1%;
+      .prevArrow {
+        top: 45%;
+        z-index: 111;
+        left: 2%;
+      }
+      .nextArrow {
+        top: 45%;
+        right: 2%;
       }
     }
   }
 }
 @media (max-width: 559px) {
-  .App-header{
+  .App-header {
     text-align: center !important;
-    .title{
+    .title {
       border: none;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .imageModal {
+    .close.icon {
+      top: 2% !important;
+      left: 89% !important;
+    }
+  }
+}
+@media (max-width: 321px) {
+  .imageModal {
+    .close.icon {
+      top: 2% !important;
+      left: 87% !important;
+    }
+    .content {
+      .prevArrow {
+        top: 38%;
+        z-index: 111;
+        left: 3%;
+        width: 25px;
+      }
+      .nextArrow {
+        top: 38%;
+        right: 3%;
+        width: 25px;
+      }
     }
   }
 }
