@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <header
+    className="App-header"
+    onClick={[Function]}
+  >
+    <div
+      className="sk-fade-in sk-spinner mainLoader sk-wordpress"
+    >
+      <div />
+    </div>
+    <span
+      className="title"
+    >
+      Image Grid
+    </span>
+  </header>
+  <div
+    className="App"
+  >
+    <div
+      style={Object {}}
+    >
+      <div
+        className="infinite-scroll-component "
+        style={
+          Object {
+            "WebkitOverflowScrolling": "touch",
+            "height": "auto",
+            "overflow": "auto",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;

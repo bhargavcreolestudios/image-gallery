@@ -1,0 +1,167 @@
+.App-header {
+  position: fixed;
+  z-index: 999;
+  background-color: brown;
+  min-width: 100vw;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  .mainLoader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .title{
+    background-color: brown;
+    display: inline-block;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    border-right: 2px solid white;
+    cursor: pointer;
+  }
+}
+.App {
+  padding: 55px 80px 0px 80px;
+  text-align: center;
+  &__imageWrapper {
+    position: relative;
+    cursor: zoom-in;
+    display: inline-block;
+    padding: 15px;
+    width: 200px;
+    .image {
+      borderradius: 10px;
+      width: 200px;
+      height: 165px;
+    }
+    &:before {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      content: '' !important;
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      transform: scale(0.96);
+      width: 100%;
+      z-index: 3;
+    }
+    &:hover:before{
+      opacity: 0.3;
+    }
+    &:hover {
+      transition: all 1s;
+      span {
+        z-index: 999;
+        display: block;
+      }
+    }
+    span {
+      transition: all 1s;
+      display: none;
+      position: absolute;
+      top: 34%;
+      left: 15%;
+      width: 70%;
+      color: white;
+      opacity: 1 !important;
+    }
+  }
+}
+.imageModal{
+  .content{
+    .modalTitle{
+      text-transform: capitalize;
+      color: white;
+      width: 85%;
+      letter-spacing: 0.5px;
+      word-spacing: 3px;
+      text-align: center;
+    }
+    position: relative;
+    .prevArrow{
+      width: 30px;
+      top: 43%;
+      left: -5%;
+    }
+    .nextArrow{
+      width: 30px;
+      top: 43%;
+      right: 6%;
+    }
+    .prevArrow, .nextArrow{
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+@media (max-width: 1199px) {
+  .imageModal{
+    .content{
+      .nextArrow{
+        right: 1%;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .imageModal{
+    .content{
+      .nextArrow{
+        right: 3%;
+      }
+    }
+  }
+}
+@media (max-width: 769px) {
+  .imageModal{
+    .content{
+      .prevArrow{
+        left: -3%;
+      }
+      .nextArrow{
+        right: -3%;
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .imageModal{
+    .content{
+      .prevArrow{
+        top: -7%;
+        left: 1%;
+      }
+      .nextArrow{
+        top: -7%;
+        right: 1%;
+      }
+    }
+  }
+}
+@media (max-width: 559px) {
+  .App-header{
+    text-align: center !important;
+    .title{
+      border: none;
+    }
+  }
+}
