@@ -149,9 +149,11 @@
     }
     .content {
       .prevArrow {
-        left: -3%;
+        top: 40%!important;
+        left: -5%;
       }
       .nextArrow {
+        top: 40%!important;
         right: -3%;
       }
     }
@@ -169,13 +171,13 @@
         margin-top: 0px;
       }
       .prevArrow {
-        top: 45%;
+        top: 40%;
         z-index: 111;
-        left: 2%;
+        left: 4%;
       }
       .nextArrow {
-        top: 45%;
-        right: 2%;
+        top: 40%;
+        right: 4%;
       }
     }
   }
@@ -204,14 +206,14 @@
     }
     .content {
       .prevArrow {
-        top: 38%;
+        top: 38%!important;
         z-index: 111;
-        left: 3%;
+        left: 5%;
         width: 25px;
       }
       .nextArrow {
-        top: 38%;
-        right: 3%;
+        top: 38%!important;
+        right: 5%;
         width: 25px;
       }
     }
