@@ -37,7 +37,3 @@ Used `jest` for test case.<br>
 You will also see in `src/__snapshots__` directory that contains test case results for the app.<br>
 App.test.tsx will give a snapshot of the current UI.
 
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
