@@ -2,7 +2,7 @@
 import React from 'react';
 import axios from 'axios';
 import Spinner from 'react-spinkit';
-import { Grid, Image, Container } from 'semantic-ui-react';
+import { Image } from 'semantic-ui-react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 //component importing
 import Header from '../components/Header';

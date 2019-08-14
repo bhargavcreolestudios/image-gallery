@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Image, Header, Container, Modal } from 'semantic-ui-react';
+import { Image, Modal } from 'semantic-ui-react';
 import Spinner from 'react-spinkit';
 import leftArrow from '../assets/left-arrow.svg';
 import rightArrow from '../assets/right-arrow.svg';
