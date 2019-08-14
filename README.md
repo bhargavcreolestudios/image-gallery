@@ -1,7 +1,5 @@
 Clone this repo to your system, you need to install all package via `npm install` or `yarn install` as per your need.<br>
 
-## Available Scripts
-
 In the project directory, you can run:
 
 ### `npm start` or `yarn start`
