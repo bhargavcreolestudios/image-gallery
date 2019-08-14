@@ -74,6 +74,11 @@
   }
 }
 .imageModal {
+  .dataLoader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
   .close.icon {
     top: -10px !important;
     left: 83% !important;

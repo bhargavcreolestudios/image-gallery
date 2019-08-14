@@ -29,12 +29,7 @@ const ModalContainer: React.FC<ModalProps> = props => (
     <Modal.Content>
       {/* modal loader */}
       {props.modalLoader && (
-        <Spinner
-          name="wordpress"
-          className="dataLoader"
-          style={{ position: 'absolute', top: '50%', left: '50%' }}
-          fadeIn="none"
-        />
+        <Spinner name="wordpress" className="dataLoader" fadeIn="none" />
       )}
       {/* for previous image */}
       {props.imageData.id !== 1 && (
